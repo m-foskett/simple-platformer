@@ -15,6 +15,11 @@ run/main_scene="res://main.tscn"
 config/features=PackedStringArray("4.0", "Mobile")
 config/icon="res://icon.svg"
 
+[autoload]
+
+Game="*res://Global/Game.gd"
+Utils="*res://Global/Utils.gd"
+
 [editor]
 
 version_control/plugin_name="GitPlugin"
