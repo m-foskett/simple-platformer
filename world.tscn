@@ -1,6 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://or4flijkyyn8"]
+[gd_scene load_steps=6 format=3 uid="uid://or4flijkyyn8"]
 
+[ext_resource type="Script" path="res://BG.gd" id="1_avw1w"]
 [ext_resource type="PackedScene" uid="uid://cwkmr3gqsuemq" path="res://Player/Player.tscn" id="1_hckk3"]
+[ext_resource type="Texture2D" uid="uid://d2u5jm51qw6s4" path="res://Sunny-land-files/Sunny-land-assets-files/PNG/environment/layers/back.png" id="2_376e3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5wp7d"]
 size = Vector2(1153.5, 292)
@@ -10,8 +12,25 @@ size = Vector2(83.5, 518.5)
 
 [node name="World" type="Node2D"]
 
+[node name="BG" type="ParallaxBackground" parent="."]
+script = ExtResource("1_avw1w")
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="BG"]
+motion_mirroring = Vector2(1152, 0)
+
+[node name="Back" type="Sprite2D" parent="BG/ParallaxLayer"]
+position = Vector2(576, 324)
+scale = Vector2(3, 2.7)
+texture = ExtResource("2_376e3")
+
 [node name="Player" parent="." instance=ExtResource("1_hckk3")]
 position = Vector2(307, 389)
+
+[node name="Panel" type="Panel" parent="."]
+offset_left = -2.0
+offset_top = 423.0
+offset_right = 1148.0
+offset_bottom = 703.0
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
@@ -26,9 +45,3 @@ shape = SubResource("RectangleShape2D_5amop")
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2(1193, 257)
 shape = SubResource("RectangleShape2D_5amop")
-
-[node name="Panel" type="Panel" parent="StaticBody2D/CollisionShape2D3"]
-offset_left = -1195.0
-offset_top = 166.0
-offset_right = -45.0
-offset_bottom = 446.0
