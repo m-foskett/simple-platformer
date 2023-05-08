@@ -40,3 +40,7 @@ func _physics_process(delta):
 	if Game.playerHP <= 0:
 		self.queue_free()
 		get_tree().change_scene_to_file("res://main.tscn")
+		# Reset the game state to default state
+		Game.playerHP = 10
+		Game.gold = 0
+		Utils.saveGame()
