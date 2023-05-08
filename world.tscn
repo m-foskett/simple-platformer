@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://or4flijkyyn8"]
+[gd_scene load_steps=10 format=3 uid="uid://or4flijkyyn8"]
 
 [ext_resource type="Script" path="res://BG.gd" id="1_avw1w"]
 [ext_resource type="PackedScene" uid="uid://cwkmr3gqsuemq" path="res://Player/Player.tscn" id="1_hckk3"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://d2u5jm51qw6s4" path="res://Sunny-land-files/Sunny-land-assets-files/PNG/environment/layers/back.png" id="2_376e3"]
 [ext_resource type="PackedScene" uid="uid://urmp67boa4hi" path="res://Frog.tscn" id="5_pi01k"]
 [ext_resource type="Script" path="res://HP.gd" id="6_t25wb"]
+[ext_resource type="Script" path="res://gold.gd" id="7_svi1t"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_d34tv"]
 texture = ExtResource("1_sa12q")
@@ -449,3 +450,12 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 24
 text = "HP"
 script = ExtResource("6_t25wb")
+
+[node name="Gold" type="Label" parent="UI"]
+offset_left = 107.0
+offset_right = 147.0
+offset_bottom = 37.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 24
+text = "Gold"
+script = ExtResource("7_svi1t")
