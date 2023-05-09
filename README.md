@@ -1,6 +1,6 @@
-# grammar-checker
+# simple-platformer
 
-This is a Grammar Checking API Dashboard application made using Next.JS 13, Typescript, Tailwind CSS, Prisma ORM and Sapling.ai.
+This is a Simple Platformer game made with Godot 4 game engine and free assets, written in GDScript.
 
 ![Maintenance](https://img.shields.io/maintenance/yes/2023)
 ![GitHub top language](https://img.shields.io/github/languages/top/m-foskett/simple-platformer)
