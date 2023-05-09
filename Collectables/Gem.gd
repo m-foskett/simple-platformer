@@ -26,8 +26,8 @@ func _on_body_entered(body):
 		# Final Value
 		finalVal = 0
 		# Tween Duration
-		duration = 0.2
+		duration = 0.4
 		# Tween the visibility
-		tweenV.tween_property(self, property , finalVal, duration)
+		await tweenV.tween_property(self, property , finalVal, duration)
 		# Callback from tween: queue_free
-		tweenP.tween_callback(queue_free)
+		tweenV.tween_callback(queue_free)
