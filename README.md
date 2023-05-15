@@ -22,4 +22,4 @@ This is a Simple Platformer game made with Godot 4 game engine and free assets, 
 Below is a non-exhaustive list of the technologies utilised within this project.
 | Game Engine | Assets |
 | ----------- | ----------- |
-| Godot 4 | Luis Zuno (@ansimuz) |
+| Godot 4 | Luis Zuno (@ansimuz) [Free Assets: Sunny Land](https://ansimuz.com/site/)|
